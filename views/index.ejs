@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/style.css' />
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div class="link-container"><a href="/new" class="link">Fill Out The Form Here</a></div>
+    <div>
+        <div class="messages">
+            <% messages.forEach(function(message) { %>
+                <div class="message-card">
+                    <p class="message-text"><%= message.text %></p>
+                    <p class="message-user">From: <%= message.user %></p>
+                    <p class="message-date">Added: <%= message.added.toLocaleDateString() %></p>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

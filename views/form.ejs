@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body class="formz">
+    <div class="form-container">
+      <h2 class="form-heading">Share Your Thoughts!</h2>
+
+      <form action="/new" method="POST" class="form-spacing">
+        <div class="form-group">
+          <label for="userName" class="form-label">Your Name:</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            required
+            placeholder="Enter your name"
+            class="form-input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="messageText" class="form-label">Your Message:</label>
+          <textarea
+            id="messageText"
+            name="messageText"
+            rows="6"
+            required
+            placeholder="Type your message here..."
+            class="form-textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-button">Post Message</button>
+      </form>
+    </div>
+  </body>
+</html>
