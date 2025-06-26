@@ -26,14 +26,6 @@ app.use("/", indexRouter);
 app.use("/new", newRouter);
 
 
-// Catch 404 and forward to error handler (optional but good for production)
-app.use((req, res, next) => {
-  const err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
-
-
 // Listening
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);

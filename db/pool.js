@@ -1,0 +1,11 @@
+require('dotenv').config()
+const { Pool } = require("pg");
+
+// This is the interface to access our database
+module.exports = new Pool({
+  host: process.env.HOST, // or wherever the db is hosted
+  user: process.env.USER,
+  database: process.env.DATABASE,
+  password: process.env.PASSWORD,
+  port: process.env.PORTDB // The default port
+});

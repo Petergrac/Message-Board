@@ -201,3 +201,8 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
+.message-null{
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
